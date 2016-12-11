@@ -1,0 +1,3 @@
+register:
+    resource: "@RegisterBundle/Controller/RegisterController.php"
+    type:      annotation
