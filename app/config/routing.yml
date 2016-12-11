@@ -7,5 +7,7 @@ login:
     type:      annotation
 
 home:
-    resource: "@HomeBundle/Controller/HomeController.php"
+    resource: "@HomeBundle/Controller"
     type:      annotation
+    prefix:    /
+
