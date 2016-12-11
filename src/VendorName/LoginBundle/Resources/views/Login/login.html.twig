@@ -1,0 +1,24 @@
+{% extends "LoginBundle::layout.html.twig" %}
+
+{% block title %} Frontend login {% endblock %}
+
+{% block section %}
+    {% if error %}
+        <div>{{ error.message }}</div>
+    {% endif %}
+
+    <form action="{{ path('vendorname_login_login_logincheck') }}" method="post">
+
+        <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="_username" class="form-control" value="{{ last_username }}"
+                   placeholder="Username"/>
+        </div>
+        <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="_password" class="form-control" placeholder="Password"/>
+        </div>
+        <button type="submit" class="btn btn-default">Login</button>
+
+    </form>
+{%  endblock %}

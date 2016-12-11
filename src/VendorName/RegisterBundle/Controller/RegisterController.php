@@ -10,11 +10,17 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use VendorName\RegisterBundle\Entity\User;
 
+/**
+ * Class RegisterController
+ * @package VendorName\RegisterBundle\Controller
+ *
+ * @Route("/")
+ */
 class RegisterController extends Controller
 {
     /**
      * @return Response
-     * @Route("/")
+     * @Route("/register")
      *
      * @Template()
      */

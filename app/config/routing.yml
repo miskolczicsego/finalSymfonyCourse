@@ -1,3 +1,11 @@
 register:
     resource: "@RegisterBundle/Controller/RegisterController.php"
     type:      annotation
+
+login:
+    resource: "@LoginBundle/Controller/LoginController.php"
+    type:      annotation
+
+home:
+    resource: "@HomeBundle/Controller/HomeController.php"
+    type:      annotation
